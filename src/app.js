@@ -6,6 +6,10 @@ const transactionRoutes = require("./routes/transaction.routes")
 
 const app = express()
 
+app.get("/", (req, res) => {
+    res.send("Server is live and running ☑️☑️☑️☑️")
+})
+
 app.use(express.json())
 app.use(cookieParser())
 
